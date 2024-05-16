@@ -1,0 +1,29 @@
+﻿@using Data.Models
+@model Explore
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="Title" asclass="form-label">Title</label>
+            <input asp-for="Title" class="form-control">
+            <span asp-validation-for="Title" style="color:red"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="SubTitle" asclass="form-label">SubTitle</label>
+            <input asp-for="SubTitle" class="form-control">
+            <span asp-validation-for="SubTitle" style="color:red"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description" asclass="form-label">Description</label>
+            <input asp-for="Description" class="form-control">
+            <span asp-validation-for="Description" style="color:red"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="PhotoFile" asclass="form-label">PhotoFile</label>
+            <input asp-for="PhotoFile" class="form-control">
+            <span asp-validation-for="PhotoFile" style="color:red"></span>
+        </div>
+        <div asp-validation-summary="All">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
